@@ -1,3 +1,5 @@
+package Amex;
+
 public class MaxReverseDigits
 {
 	public static void solution(int N) {

@@ -1,19 +1,24 @@
-package com.test.DataStructure.sort;
+package DataStructure.sort;
 
 public class InsertionSort
 {
 	public static  void sort(int[] initArray)
 	{
 
-		for(int firstUnsortedIndex=1;firstUnsortedIndex<initArray.length;firstUnsortedIndex++)
+		for(int firstUnsortedIndex=1;firstUnsortedIndex <initArray.length ;firstUnsortedIndex++)
 		{
 			int newElement=initArray[firstUnsortedIndex];
 			int i;
-			for(i=firstUnsortedIndex;i>0 && initArray[i-1]<initArray[i];i--)
+			for(i=firstUnsortedIndex; i>0 && initArray[i-1] > newElement;i--)
 			{
-				initArray[i-1]=initArray[i];
+				initArray[i]=initArray[i-1];
 			}
 			initArray[i]=newElement;
+		}
+
+		for(int i=0;i<initArray.length;i++)
+		{
+			System.out.println(initArray[i]);
 		}
 	}
 

@@ -1,4 +1,4 @@
-package com.test.DataStructure.sort;
+package DataStructure.sort;
 
 public class BubbleSort
 {
